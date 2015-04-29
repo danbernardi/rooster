@@ -1,0 +1,18 @@
+// layout
+
+.row {
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+}
+.fullwidth {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.hero {
+  background: url(../../img/herobg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 3em;
+}
