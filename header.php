@@ -26,7 +26,7 @@
       <div class="mobmenu-trigger"><a href="#mobmenu"><i class="fa fa-bars"></i></a></div>
     </div>
   </header>
-  <div id="mobmenu">
+  <div id="mobmenu" style="visibility: hidden;">
     <ul>
       <li><a href="#welcome">Welcome</a></li>
       <li><a href="#custom">Custom Orthodontics</a></li>
