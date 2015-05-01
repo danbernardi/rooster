@@ -1,18 +1,58 @@
 // layout
 
+#pagewrap {
+  overflow: hidden;
+}
 .row {
+  position: relative;
   width: 100%;
-  max-width: 60em;
+  max-width: 74em;
   margin: 0 auto;
+  padding: 0 2em;
+  @include breakpoint($small) {
+    padding: 0 1em;
+  }
+}
+.row700 {
+  width: 100%;
+  max-width: 48em;
+  margin: 0 auto;
+  padding: 0 2em;
+  @include breakpoint($small) {
+    padding: 0 1em;
+  }
 }
 .fullwidth {
+  @extend .clearfix;
   width: 100%;
   position: relative;
   display: block;
 }
-.hero {
-  background: url(../../img/herobg.jpg) center center no-repeat;
+
+.text-content {
+  padding: 6em 0;
+}
+
+aside.sidebar {
+  @include span(4 of 12);
+  @include breakpoint($medium) {
+    @include span(12 of 12 last);
+  }
+}
+.content-right {
+  @include span(8 of 12 last);
+  @include breakpoint($medium) {
+    @include span(12 of 12 last);
+  }
+}
+
+.welcome {
+  background: url(../../img/section1bg.jpg) center center no-repeat white;
   background-size: cover;
-  height: 100vh;
-  padding-top: 3em;
+}
+.doctor {
+  background: lighten(desaturate($teal, 50), 50);
+}
+.custom {
+  background: #fafafa;
 }

@@ -2,6 +2,9 @@
 @import                      "compass/reset";        // css reset
 @import                               "susy";        // sass based grid
 @import                         "breakpoint";        // sass based media queries
+@import                              "slick";        // base slick carousel styles
+@import                        "slick-theme";        // slick carousel theme styles
+@import                   "jquery.mmenu.all";        // off-canvas mobile menu
 @import                             "config";        // store configurations here
 @import                          "variables";        // store variables here
 @import                             "mixins";        // store mixins here
